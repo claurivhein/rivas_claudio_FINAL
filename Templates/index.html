@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Seminario Gastronomia</title>
+</head>
+<body class="container mt-4">
+    
+    <div class="bg-dark text-white rounded-3 text-center py-4 fs-2 mb-2 mx-2">Seminario de gastronomia</div>
+    <div class="container mt-3 text-center ">
+        <div class="row gap-0">
+            <div class="col">
+                <div class="card rounded-4 h-100">
+                    <div class="card-header"> 
+                        <h1 class="fs-5 text-center m-1">CRUD Inscritos/Institucion</h1>
+                    </div>
+                    <div class="card-body">
+                        <div class="row p-3 py-2">
+                            <a href={% url 'crudinscritos' %} class="btn btn-dark text-white mb-4">Inscritos</a>
+                            <a href={% url 'crudinstitucion' %} class="btn btn-dark text-white ">Instituciones</a>    
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="col">
+                <div class="card rounded-4 h-100">
+                    <div class="card-header"> 
+                        <h1 class="fs-5 text-center m-1">API REST con Class Based Views para Inscritos</h1>
+                    </div>
+                    <div class="card-body">
+                        <div class="row p-3 py-2">
+                            <a href={% url 'inscritos' %} class="btn btn-dark text-white mb-4">Inscritos API</a>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card rounded-4 h-100">
+                    <div class="card-header"> 
+                        <h1 class="fs-5 text-center m-1">API REST con Function Based Views para Institucion</h1>
+                    </div>
+                    <div class="card-body">
+                        <div class="row p-3 py-2">
+                            <a href={% url 'institucion' %} class="btn btn-dark text-white mb-4">Institucion API</a>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3 text-center ">
+        <div class="row gap-0">
+            <div class="col">
+                <div class="card rounded-4 h-100">
+                    <div class="card-header"> 
+                        <h1 class="fs-5 text-center m-1">API Datos Autor</h1>
+                    </div>
+                    <div class="card-body">
+                        <div class="row p-3 py-2">
+                            <a href={% url 'datos_autor' %} class="btn btn-dark text-white mb-4 w-50 mx-auto">Ver datos autor</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Agregar una inscripción</title>
+    
+</head>
+<body class="container my-4">
+    <div class="bg-dark text-white rounded-3 text-center py-4 fs-2 mb-3 w-50 mx-auto">Agregar una inscripción</div>
+
+    <form action="" method="POST" class="py-3 px-3 border rounded-3 w-50 mx-auto">
+        {% csrf_token %}
+        {{ form }}
+        <button type="button submit" class="btn btn-success w-100 mt-3">Guardar</button>
+    </form>
+
+    <div class="d-flex justify-content-center w-50 mx-auto">
+        <a href={% url 'crudinscritos' %} class="btn btn-danger mt-3 w-100">Cancelar</a>
+    </div>
+    
+
+</body>
+</html>
